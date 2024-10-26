@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXAM Matematika o'yini</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>    
+</head>
+<body>
+
+    <header>
+        <nav class="container mx-auto max-w-90% items-center text-center">
+            <div id="startScreen" class="flex-col py-60">
+                <p class="text-[50px] font-bold pb-3">Matematika o'yini</p>
+                <button id="startButton" class="btn btn-outline px-20 font-bold text-[25px]">Boshlash</button>
+            </div>
+            <div id="gameScreen" class="hidden flex-col items-center">
+                <p id="questionText" class="text-[30px] font-bold pb-3"></p>
+                <div class="flex gap-10 items-center justify-center text-center pb-10">
+                    <input id="answerInput" type="text" placeholder="Javobni kiriting" class="input input-bordered input-warning w-full max-w-xs" />               
+                </div>
+                <button id="submitAnswer" class="btn btn-primary">Javobni yuborish</button>
+                <p id="resultText" class="text-[20px] font-bold py-3"></p>
+                <button id="retryButton" class="btn btn-outline btn-success hidden">Yana o'ynash</button>
+            </div>
+        </nav>
+    </header>
+
+    <script src="index.js"></script>
+</body>
+</html>
